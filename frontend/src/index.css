@@ -1,0 +1,108 @@
+/* Global reset + base — analytics app typography */
+:root {
+  --bg: #eef4f6;
+  --bg-accent: #eef7f8;
+  --surface: #ffffff;
+  --ink: #22313f;
+  --muted: #5d6e79;
+  --line: #d7e2e6;
+  --brand: #5c7e8f;
+  --brand-2: #486570;
+  --accent: #7fb8b8;
+  --warn: #c5a774;
+  --danger: #c06a74;
+  --ok: #6fa58c;
+  --shadow: 0 12px 32px rgba(53, 76, 88, 0.08);
+  --radius: 14px;
+  --font-display: "Segoe UI", "Trebuchet MS", "Gill Sans", sans-serif;
+  --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  /* UI variables for theming */
+  --sidebar: #f0f0f0;
+  --sidebar-text: #22313f;
+  --brand-sub: #486570;
+  --nav-text: #22313f;
+  --active-text: #ffffff;
+  --logout-border: rgba(0,0,0,0.08);
+  --logout-text: #22313f;
+  --logout-hover-bg: rgba(0,0,0,0.04);
+  --logout-hover-text: #000000;
+  --input-bg: #ffffff;
+  --table-header-bg: #f3f7f8;
+  --table-row-hover: #edf5f7;
+  --icon-color: #22313f;
+  --admin-text: #22313f;
+  --logout-border-strong: rgba(0,0,0,0.16);
+  --top-driver-name: #0b66a3;
+  --top-driver-imp: #0b66a3;
+  --top-driver-bar: #0b66a3;
+  --top-driver-grad-start: #0b66a3;
+  --top-driver-grad-end: #67d4b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+/* Smooth theme transitions for supported properties */
+* { transition: background-color 220ms ease, color 200ms ease, border-color 200ms ease; }
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+  /* Modern professional dark palette */
+  --bg: #0f1724; /* page background */
+  --bg-accent: #0b1220; /* subtle panels/bg accents */
+  --surface: #0f2130; /* cards, panels */
+  --ink: #e6f1f5; /* main text */
+  --muted: #97a9b3; /* secondary text */
+  --line: #21313a; /* borders/dividers */
+  --brand: #1f7f76; /* primary brand (teal) */
+  --brand-2: #155e56; /* darker brand */
+  --accent: #4db6a6; /* accent for highlights */
+  --warn: #b8864a; /* warning */
+  --danger: #d66b6b; /* danger */
+  --ok: #6fb58c; /* success */
+  --shadow: 0 10px 30px rgba(2,6,12,0.6);
+  --radius: 12px;
+  /* Dark theme UI variables */
+  --sidebar: #07121a;
+  --sidebar-text: #d7e9f6;
+  --brand-sub: #bcdff0;
+  --nav-text: #d7e9f6;
+  --active-text: #fff;
+  --logout-border: rgba(255,255,255,0.06);
+  --logout-text: #d7e9f6;
+  --input-bg: #0b1620;
+  --table-header-bg: #0b1a24;
+  --table-row-hover: #12232b;
+  --icon-color: #ffffff;
+  --admin-text: #ffffff;
+  --logout-hover-bg: rgba(255,255,255,0.04);
+  --logout-hover-text: #ffffff;
+  --logout-border-strong: rgba(255,255,255,0.12);
+  --top-driver-name: #67d4b8;
+  --top-driver-imp: #67d4b8;
+  --top-driver-bar: #67d4b8;
+  --top-driver-grad-start: #67d4b8;
+  --top-driver-grad-end: #1f7f76;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--bg);
+}
+
+code {
+  font-family: ui-monospace, Consolas, monospace;
+  background: var(--bg-accent);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}

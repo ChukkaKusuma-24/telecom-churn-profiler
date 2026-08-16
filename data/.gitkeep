@@ -1,0 +1,9 @@
+# Place the Telco Customer Churn CSV here as:
+#   data/telco_customer_churn.csv
+#
+# Download from Kaggle (IBM Telco Customer Churn) or similar source.
+# Expected columns include: customerID, gender, SeniorCitizen, Partner,
+# Dependents, tenure, PhoneService, MultipleLines, InternetService,
+# OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport,
+# StreamingTV, StreamingMovies, Contract, PaperlessBilling,
+# PaymentMethod, MonthlyCharges, TotalCharges, Churn
