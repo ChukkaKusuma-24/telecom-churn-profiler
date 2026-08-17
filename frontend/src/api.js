@@ -2,7 +2,7 @@
  * api.js — thin fetch wrappers for the FastAPI backend.
  * All UI stats must come from these endpoints (never hardcode).
  */
-const API_BASE = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API_BASE = "https://telecom-churn-profiler-1.onrender.com";
 
 async function request(path, options = {}) {
   const url = `${API_BASE}${path}`;
